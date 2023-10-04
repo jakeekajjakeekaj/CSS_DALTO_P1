@@ -37,3 +37,22 @@
 /* h2:hover {
   color:red;
 } */
+
+/* NIVEL DE JERARQUÍA: No solo influye lo que es la cascada para determinar la importancia y predominancia de las cosas, sino que todos los elementos tienen un valor jerárquico y este va de tipo:
+pseudo-elementos == elementos << atributos == pseudo-clases == clases << identificadores << estilos en linea << !important */
+
+/* Ejemplo de estilo en linea:
+<h1 style="color:red">EJEMPLO ESTILO LINEA</h1> */
+
+/* Ejemlo de !important:
+h1 {
+  color: red !important
+} */
+
+h1 {
+  color: red;
+}
+
+.color-red {
+  color: red;
+}
