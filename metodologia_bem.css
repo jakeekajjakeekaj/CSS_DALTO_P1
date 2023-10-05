@@ -2,3 +2,8 @@
 /* .contact-form__input:first-child {
   color: red;
 } */
+
+/* Indica que el hijo tiene prioridad */
+.contact-form__input--cualquierCosa {
+  color: red;
+}
