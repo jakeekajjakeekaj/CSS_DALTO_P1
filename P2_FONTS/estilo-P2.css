@@ -1,0 +1,18 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.contact-form {
+  font-size: 25px;
+}
+
+/* EL line-height: 2 utiliza el doble del tamaño de la letra, lo que puede hacer un efecto de centrado */
+/* LA IMPORTANVIA DE ESCRIBIR VARIOS font-family ES QUE SI EL EQUIPO NO CUENTA CON EL TIPO DE LETRA QUE SE ESCRIBIÓ PRIMERO, ENTONCES PASA AL SIGUIENTE */
+.contact-form__h2 {
+  font-size: 2em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  line-height: 1.9;
+  font-weight: 700;
+  color: red;
+}
