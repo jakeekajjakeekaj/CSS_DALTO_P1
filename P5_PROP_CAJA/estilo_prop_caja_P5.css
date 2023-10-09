@@ -1,0 +1,42 @@
+* {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 100;
+  font-size: 30px;
+}
+
+.caja1 {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  margin: auto;
+  border: 10px solid black;
+  box-sizing: border-box;
+}
+
+.caja2 {
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  margin: auto;
+  border: 10px solid black;
+  box-sizing: border-box;
+  position: relative;
+  top: -50px;
+  right: 120px;
+  /* Al trabajar con position relative, lo que pasa es que el ultimo relative estará por encima de todos los demás, si queremos que esta propiedad cambie se le debe de dar un valor z-index mayor, así como que muestra en el ejemplo de abajo, de esta manera se conseguirá dejar la caja 2 por encima de la caja 3 a pesar de que la caja 3 se agregó después */
+  /* OJO: LO MEJOR ES HACER Z-INDEX EN MULTIPLOS DE 50, ESTO ES PORQUE SI NOS EQUIVOCAMOS Y QUEREMOS MANEJAR OTRA BOX EN EL MEDIO DE 2 CAJAS, YA NO SE PUEDE INSERTAR Y SE TENDRÁ QUE RECORRER TODAS LAS DEMAS CAJAS DE ARRIBA, Y DE ESTA MANERA NOS ASEGURAMOS DE QUE HAYAN ESPACIOS DISPONIBLES PARA ASIGNAR ENTRE LAS DIFERENTES CAJAS ;) */
+  z-index: 100;
+}
+
+.caja3 {
+  width: 200px;
+  height: 200px;
+  background-color: purple;
+  margin: auto;
+  border: 10px solid black;
+  box-sizing: border-box;
+  position: relative;
+  top: -120px;
+  right: 0px;
+  z-index: 50;
+}
