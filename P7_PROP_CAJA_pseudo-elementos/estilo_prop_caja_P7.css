@@ -1,0 +1,57 @@
+* {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 100;
+  font-size: 25px;
+}
+
+.texto {
+  padding: 20px;
+}
+
+.texto::first-line {
+  color: blue;
+  font-size: 2em;
+}
+
+.texto::first-letter {
+  color: red;
+  font-size: 4em;
+}
+
+form {
+  margin: 10px auto;
+  display: block;
+  background-color: #555;
+  padding: 100px;
+  width: 50%;
+}
+
+input {
+  padding: 6px;
+  width: 100%;
+}
+
+input::placeholder {
+  color: red;
+  background-color: yellow;
+}
+
+input::selection {
+  color: purple;
+  background-color: grey;
+}
+
+b {
+  padding: 6px;
+  width: 100%;
+}
+
+b::before {
+  content: 'Me suscribí';
+  color: #fff;
+}
+
+b::after {
+  content: 'mi canal';
+  color: red;
+}

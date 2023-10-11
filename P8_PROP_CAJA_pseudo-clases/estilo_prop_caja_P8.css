@@ -1,0 +1,22 @@
+* {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 100;
+  font-size: 25px;
+}
+
+.caja1 {
+  height: 200px;
+  width: 200px;
+  background-color: slateblue;
+  transition: background-color 0.5s, height 0.1s, width 1s, border 1s;
+  /* Lo de abajo puede cambiar el valor de todo, sin embargo ESTO NO ES RECOMENDABLE DE HACER */
+  /* transition: all 1s; */
+  border: 3px solid red;
+}
+
+.caja1:hover {
+  background-color: red;
+  height: 300px;
+  width: 300px;
+  border: 6px dashed blue;
+}
