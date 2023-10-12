@@ -20,3 +20,136 @@
   width: 300px;
   border: 6px dashed blue;
 }
+
+/* Al no haber sido clickeado */
+a:link {
+  color: red;
+}
+
+/* Al ya haber sido clickeado */
+a:visited {
+  color: pink;
+}
+
+/* Esto sirve para cambiar los valores de la caja al momento de presionar sobre una caja */
+.caja-presiona {
+  width: 250px;
+  height: 250px;
+  background-color: red;
+  margin: 25px;
+  transition: background-color 0.4s, width 1s;
+}
+
+.caja-presiona:active {
+  background-color: blue;
+  width: 400px;
+}
+
+/* Esto sirve para cambiar los valores de la caja al momento de interactuar con un input */
+.caja-introduce {
+  margin: 25px;
+  background-color: lightgray;
+  transition: background-color 1s, padding 1s;
+}
+
+.caja-introduce:focus {
+  background-color: white;
+  padding: 20px;
+}
+
+.caja-introduce::placeholder {
+  color: black;
+}
+
+.caja-lang {
+  margin: 25px;
+}
+
+/* se modifica al etiquetado es del language */
+.caja-lang b:lang(es) {
+  background-color: red;
+  padding: 20px;
+  /* border: 2px solid black; */
+}
+
+.caja-imagen {
+  display: inline-block;
+  margin: 25px;
+  width: 300px;
+  height: 500px;
+  /* display: flex; */
+}
+
+.caja-imagen img {
+  height: 100%;
+  width: 100%;
+  border: 2px solid red;
+  /* El de abajo nos muestra la imagen como es y tomamos de referncia la box dicha */
+  object-fit: contain;
+}
+
+.caja-imagen2 {
+  display: inline-block;
+  margin: 25px;
+  width: 300px;
+  height: 500px;
+  /* display: flex; */
+}
+
+.caja-imagen2 img {
+  height: 100%;
+  width: 100%;
+  border: 2px solid red;
+  /* La imagen se ajusta al contenedor */
+  object-fit: cover;
+}
+
+.caja-imagen3 {
+  display: inline-block;
+  margin: 25px;
+  width: 300px;
+  height: 500px;
+  /* display: flex; */
+}
+
+.caja-imagen3 img {
+  height: 100%;
+  width: 100%;
+  border: 2px solid red;
+  /* Se queda con la resolución original */
+  object-fit: none;
+}
+
+.caja-imagen4 {
+  display: inline-block;
+  margin: 25px;
+  width: 300px;
+  height: 500px;
+  /* display: flex; */
+}
+
+.caja-imagen4 img {
+  height: 100%;
+  width: 100%;
+  border: 2px solid red;
+  /* Se queda con la resolución más pequeña */
+  object-fit: scale-down;
+}
+
+.caja-imagen-objectpos {
+  display: inline-block;
+  margin: 25px;
+  width: 300px;
+  height: 500px;
+  /* display: flex; */
+}
+
+.caja-imagen-objectpos img {
+  height: 100%;
+  width: 100%;
+  border: 2px solid red;
+  /* Se queda con la resolución original */
+  object-fit: none;
+  /* Indica la posición en que se ubicará la imagen dentro de nuestro container, puede ser left, right, top y bottom; de igual manera se puede indicar en medidas personalizadas como por ejemplo em o px */
+  object-position: bottom;
+}
