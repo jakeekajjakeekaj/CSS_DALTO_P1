@@ -15,3 +15,7 @@ DIA 09-10-2023 CORTE AL 3:16:14 / 9:46:54
 DIA 10-10-2023 CORTE AL 3:33:07 / 9:46:54
 
 DIA 10-10-2023 CORTE AL 4:10:01 / 9:46:54
+
+No sabía donde meterlo, pero una manera práctica de sacar el color rapido es por ejemplo al colocar #f00 esto indicaría el color Rojo en HTML ya que se vería tal que #ff0000 lo cual en 2 cifras es R G B, aunque de otra manera es la que ya se sabe de buscar el picker del color, sin embargo esta es una manera rápida de sacarlo
+
+DIA 16-10-2023 CORTE AL 4:42:19 / 9:46:54

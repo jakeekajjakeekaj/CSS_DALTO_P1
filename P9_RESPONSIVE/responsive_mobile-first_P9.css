@@ -1,18 +1,31 @@
 * {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: 100;
-  font-size: 25px;
 }
 
-.caja {
-  margin: 40px;
-  width: 200px;
-  height: 300px;
-  border: 5px solid red;
-  background-color: pink;
-  cursor: pointer;
+div {
+  width: 45%;
+  display: inline-block;
+  padding: 20px;
+  background: #ddd;
 }
 
-.caja:active {
-  cursor: row-resize;
+h1 {
+  font-size: 24px;
+}
+
+.caja2 {
+  background: #bbb;
+}
+
+/* QUE NO SE TE OLVIDE AGREGAR LA ETIQUETA VIEWPORT */
+@media only screen and (max-width: 800px) {
+  div {
+    display: block;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 20px !important;
+  }
 }
