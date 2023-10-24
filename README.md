@@ -21,3 +21,5 @@ No sabía donde meterlo, pero una manera práctica de sacar el color rapido es p
 DIA 16-10-2023 CORTE AL 4:42:19 / 9:46:54
 
 DIA 23-10-2023 CORTE AL 6:01:22 / 9:46:54
+
+DIA 23-10-2023 CORTE AL 6:55:54 / 9:46:54

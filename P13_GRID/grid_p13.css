@@ -1,0 +1,26 @@
+* {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 100;
+}
+
+body {
+  background: radial-gradient(circle, #fff, #bbb);
+  padding: 15px;
+}
+
+.grid-container {
+  display: grid; /* Grid a pesar de trabajar con filas y columnas, nosotros tenemos que asignarlas como abajo, de lo contrario se comportará como un típico block */
+  grid-template-rows: 150px 150px 150px; /* De esta manera se asignan las filas, aquí se está indicando que son 3 filas de 150px */
+  /* fr ES UTILIZADO PARA DETERMINAR EL TAMAÑO DE LA COLUMNA O FILA, es decir entre más se estire, se realizará el corrimiento de pixeles */
+  grid-template-columns: 150px 150px 1fr 1fr; /* De esta manera se asignan las columnas, aquí se está indicando que son 3 columnas de 150px */
+  border: 1px solid #000;
+  gap: 10px; /* Separa las tablas entre sí */
+  /* row-gap: 10px; */ /* Separa las tablas en el eje de las filas */
+  /* column-gap: 10px; */ /* Separa las tablas en el eje de las columnas */
+  background-color: #333;
+}
+
+.grid-item {
+  border: 2px solid #000;
+  background-color: #999;
+}
