@@ -1,0 +1,35 @@
+* {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 100;
+}
+
+.flex-container {
+  display: flex;
+  /* flex-direction: row-reverse; */
+  /* flex-direction: column; */
+  /*flex-wrap: wrap;*/ /* Lo que esto hace es bajar las cajas dependiendo del ancho determinado, básicamente respeta el ancho que tu diste */
+  /* flex-flow: column wrap; */ /*Esto solo es si se modifica tanto el column como el wrap para así simplificarlo en una sola linea de codigo */
+  justify-content: space-evenly; /* Esto sirve para modificar la ubicación del contenido, puedes utilizar center para centrarlo en la horizontal, PERTENECE AL MAIN AXIS */
+  height: 100vh;
+  /*align-items: stretch;*/ /* PERTENECE AL CROSS AXIS (VERTICAL), incluso puedes centrar a la vertical con center */
+  /*align-content: flex-start;*/ /* PERTENECE AL CROSS AXIS (VERTICAL) */
+}
+
+.flex-item {
+  background-color: #248;
+  color: #fff;
+  margin: 5px;
+  min-width: 120px;
+  text-align: center;
+  height: 80px;
+}
+
+.orange {
+  background: orange;
+  /*flex-grow: 1;*/ /*Esto lo que hace es que le da todo el espacio sobrante a esta caja*/
+}
+
+.green {
+  background: green;
+  align-self: flex-end;
+}
