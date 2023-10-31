@@ -1,0 +1,45 @@
+* {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 100;
+}
+
+body {
+  background: radial-gradient(circle, #fff, #bbb);
+}
+
+.content {
+  display: flex;
+  flex-direction: column; /* De esta manera el main-axis es vertical */
+  height: 100vh;
+}
+
+.header,
+.main,
+.aside,
+.footer {
+  padding: 20px;
+}
+
+.header {
+  background: #cafffb;
+  flex-basis: 60px; /* flex-basis, determina el tamaño del flex axis */
+}
+
+.main {
+  background: #6866b4;
+  flex-basis: 300px;
+  flex-grow: 2; /* ESTO INDICA CUÁNTO CRECERÁ EL ELEMENTO EN RELACIÓN CON EL RESTO DE LOS ELEMENTOS */
+  flex-shrink: 0; /* ESTO INDICA CUÁNTO SE ENCOGERÁ EL ELEMENTO EN RELACIÓN CON EL RESTO DE ELEMENTOS */
+}
+
+.aside {
+  background: #483d8b;
+  flex-basis: 200px;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.footer {
+  background: #ee82ee;
+  flex-grow: 1;
+}
