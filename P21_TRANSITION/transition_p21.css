@@ -1,0 +1,50 @@
+* {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 100;
+}
+
+body {
+  background: radial-gradient(circle, #fff, #bbb);
+}
+
+.container {
+  background: #86f;
+  padding: 20px 5px;
+}
+
+.caja {
+  background: #025;
+  height: 50px;
+  width: 50px;
+  transition-property: left, background; /* AQUI NO ES RECOMENDABLE PONER ALL, YA QUE CONSUME MUCHOS RECURSOS, LO IDEAL ES PONER SOLO LO UE SE UTILIZARÁ COMO PO EJEMPLO BACKGROUND O LEFT O ALGO POR EL ESTILO */
+  transition-duration: 1s, 1.5s;
+  /*transition-delay: 1s;*/ /* ESTO PROVOCA QUE EL HOVER TENGA UN RETRASO AL DETECTARSE */
+  margin: 20px;
+
+  /*background: inherit; */ /* Esto indica que hereda el color */
+  border: 1px solid #000;
+  position: relative;
+  left: 0;
+}
+
+.container:hover > .caja {
+  /* Este hover es indicado para tooooooda la caja */
+  left: 80%;
+  background: #fff;
+}
+
+.caja:first-child {
+  transition-timing-function: linear;
+}
+.caja:nth-child(2) {
+  transition-timing-function: ease;
+}
+.caja:nth-child(3) {
+  transition-timing-function: ease-in;
+}
+.caja:nth-child(4) {
+  transition-timing-function: ease-out;
+}
+.caja:nth-child(5) {
+  transition-timing-function: ease-in-out;
+}
