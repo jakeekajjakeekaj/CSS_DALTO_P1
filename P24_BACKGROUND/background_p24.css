@@ -1,0 +1,23 @@
+* {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 100;
+}
+
+body {
+  background: radial-gradient(circle, #fff, #bbb);
+}
+
+.container {
+  padding: 20px 5px;
+  background: #86f;
+  width: 350px;
+  height: 197px;
+  margin: 40px;
+  background-image: url(https://wallpaperaccess.com/full/2637581.jpg);
+  background-size: cover; /* El tamaño de la imagen, puede ser este, puede ser covero contain por ejemplo, existen varios */
+  background-repeat: no-repeat; /* Debido al contain, la imagen se repite, por lo que con esto se evita que se repita */
+  /*background-clip: border-box;*/ /* Indica dónde terminará la imagen */
+  /*background-origin: border-box;*/ /* Indica dónde iniciará la imagen */
+  /*background-position: center top;*/ /* Esto indica la posición de la imagen */
+  background-attachment: fixed; /* Se queda fijo el background */
+}

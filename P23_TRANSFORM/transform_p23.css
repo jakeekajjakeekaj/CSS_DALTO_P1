@@ -1,0 +1,42 @@
+* {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 100;
+}
+
+body {
+  background: radial-gradient(circle, #fff, #bbb);
+}
+
+.container {
+  padding: 20px 5px;
+  background: #86f;
+}
+
+.caja {
+  background: #025;
+  height: 80px;
+  width: 80px;
+  margin: 20px;
+  display: flex;
+  color: #fff;
+  transition: transform 1s;
+  transform: translate(100px, 100px) scaleX(2); /* Con el transform uno de los ejemplos que se pueden utilizar es translate, scale, scaleX, scaleY */
+}
+
+.caja:hover {
+  transform: translate(100px, 100px) scale(2);
+}
+
+.caja:active {
+  transform: skew(30deg) translate(100px, 100px) scale(2);
+}
+
+b {
+  margin: auto;
+}
+
+.caja b:active {
+  transform: skew(
+    -30deg
+  ); /* Esto sirve para que la animación skew de la caja no deforme al texto que se encuentra dentro de la misma */
+}

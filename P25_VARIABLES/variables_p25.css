@@ -1,0 +1,29 @@
+* {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 100;
+}
+
+:root {
+  /* SI SE COLOCA EN ROOT, INDICA QUE ES UNA VARIABLE GLOBAL Y PUEDE SER USADA DONDE SEA */
+  --color-rojo-claro: #f44;
+  --color-azul-claro: #66f;
+}
+
+body {
+  background: radial-gradient(circle, #fff, #bbb);
+}
+
+div {
+  padding: 30px;
+  height: 150px;
+  width: 150px;
+  margin: 30px;
+}
+
+.container {
+  background: var(--color-rojo-claro);
+}
+
+.container-2 {
+  background: var(--color-azul-claro);
+}

@@ -1,0 +1,45 @@
+* {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 100;
+}
+
+body {
+  background: radial-gradient(circle, #fff, #bbb);
+}
+
+.container {
+  padding: 20px 5px;
+  background: #86f;
+}
+
+.caja {
+  background: #025;
+  height: 80px;
+  width: 80px;
+  margin: 20px;
+  position: relative;
+  animation-name: desplazarse; /* Se debe colocar el nombre de la animación, este sería el keyframe declarado */
+  animation-duration: 3s;
+  animation-iteration-count: infinite; /* Cantidad de veces que se repetirá */
+  animation-direction: alternate; /* Tiene varios pero este es un ejemplo */
+  animation-fill-mode: forwards; /* Se queda en la última posición declarada al utilizar el forwards, esto varía dependiendo de lal contador de iteraciones */
+}
+
+@keyframes desplazarse {
+  /* Para las animaciones se utilizan los keyframes */
+  0% {
+    /* También se puede poner "from" en vez de "0%" para indicar que se realizará la acción desde un punto */
+    left: 0;
+    background: #025;
+  }
+
+  50% {
+    background: #f00;
+  }
+
+  100% {
+    /* También se puede poner "to" en vez de "100%" para indicar que se realizará esa acción */
+    left: 80%;
+    background: #0f0;
+  }
+}
