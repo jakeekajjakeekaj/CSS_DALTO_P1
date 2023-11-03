@@ -31,4 +31,6 @@ DIA 30-10-2023 CORTE AL 8:00:51 / 9:46:54
 DIA 01-11-2023 CORTE AL 8:23:34 / 9:46:54
 
 DIA 02-11-2023 CORTE AL 9:12:32 / 9:46:54
-Las animaciones se deben hacer con translate para no consumir muchos recursos \*\*
+Las animaciones se deben hacer con translate para no consumir muchos recursos
+
+DIA 03-11-2023 CORTE AL 9:46:54 / 9:46:54

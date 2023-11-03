@@ -1,0 +1,22 @@
+* {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 100;
+  scroll-behavior: smooth; /* DE ESTA MANERA AL HACER CLICK SOBRE UN LINK DE LA MISMA PÁGINA, EN VEZ DE PASARTE DE GOLPE A ESA SECCIÓN, LO HARÁ DE MANERA LENTA HACIENDO EL SCROLL */
+}
+
+body {
+  background: radial-gradient(circle, #fff, #bbb);
+}
+
+.container {
+  padding: 20px;
+  background: #6866d4;
+  font-size: 20px;
+  direction: rtl; /* INDICA LA DIRECCIÓN, EN ESTE CASO POR EJEMPLO ES "rtl", osea Right To Left */
+  letter-spacing: 4px; /* INDICA EL ESPACIADO */
+}
+
+#content {
+  background: #f00;
+  user-select: none; /* DETERMINA SI EL TEXTO ES SELECCIONABLE O NO */
+}

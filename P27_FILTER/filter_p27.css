@@ -1,0 +1,36 @@
+* {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 100;
+}
+
+body {
+  background: radial-gradient(circle, #fff, #bbb);
+}
+
+.container {
+  filter: contrast(30);
+  background: #fff;
+}
+
+.caja {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  background: #f00;
+  margin: 40px;
+  border-radius: 50%;
+  filter: blur(20px);
+}
+
+.caja:first-child {
+  animation: trasladar 1.6s alternate infinite;
+}
+
+@keyframes trasladar {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(160px);
+  }
+}

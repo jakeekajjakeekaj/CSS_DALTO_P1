@@ -1,0 +1,20 @@
+* {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 100;
+}
+
+body {
+  background: radial-gradient(circle, #fff, #bbb);
+}
+
+img {
+  /* filter: blur(10px); */
+  filter: brightness(2);
+  filter: contrast(2);
+  filter: drop-shadow(
+    10px 10px 5px #000
+  ); /* EN VEZ DE DARLE SOMBRA A LA CAJA, SE LA DA A LA IMAGEN, ES DECIR SI ES UNA IMAGEN CON FONDO TRANSPARENTE, LA SOMBRA SE APLICARÁ A LA FORMA EN VEZ DE A LA BOX */
+  /* box-shadow: 10px 10px 5px #000; */ /* ESTE ES COMO EL DE ARRIBA, PERO LA SOMBRA SE LA DA A LA CAJA */
+  filter: hue-rotate(200deg); /* INVIERTE COLORES */
+  filter: invert(100%); /* SE INVIERTE EL COLOR */
+}
